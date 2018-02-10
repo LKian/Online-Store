@@ -15,7 +15,8 @@ html {
 
 .navContainer a, .navContainer a:visited, .navContainer a:active {
 	color: #ccc; }
-
+.navContainer i {
+	color: #ccc; }
 .toggle {
 	color: #ccc; }
 .menu {
