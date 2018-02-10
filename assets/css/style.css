@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box; }
+html, body {
+	margin: 0;
+	padding: 0; }
+html { 
+	font-family: "helvetica neue", sans-serif; }
+
+.navContainer {
+	display: flex;
+	padding: 8px;
+	align-items: center;
+	justify-content: space-between;
+	background: #111; }
+
+
+ 
+.menu {
+	display: flex; }
+.link {
+	color: #ccc;
+	text-decoration: none; }
+.social .link {
+		margin: 0 10px;	}
+
+
+
+@media screen and (min-width: 768px) { 
+	.menu, .social {
+		display: flex; }
+	.menu .link {
+		margin: 0 10px;	} 
+}
