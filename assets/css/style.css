@@ -13,7 +13,8 @@ html {
 	justify-content: space-between;
 	background: #111; }
 
-
+.navContainer a, .navContainer a:visited, .navContainer a:active {
+	color: #ccc; }
 
 .toggle {
 	color: #ccc; }
