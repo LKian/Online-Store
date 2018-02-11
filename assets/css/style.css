@@ -3,37 +3,103 @@
 html, body {
 	margin: 0;
 	padding: 0; }
+body {
+	background-color: #d1c380;
+background-image: url("https://www.transparenttextures.com/patterns/batthern.png"); }
 html { 
 	font-family: "helvetica neue", sans-serif; }
 
 .navContainer {
 	display: flex;
-	padding: 8px;
+	display: -webkit-box;
+  	display: -ms-flexbox;
+    display: -webkit-flex;
+	justify-content: space-between; 
+	background: blue;
+	position: relative;
+	height: 35px;  }
+
+/*.navContainerMobile { 
 	align-items: center;
-	justify-content: space-between;
-	background: #111; }
+	flex-direction: column;
+	height: 100vw;
+	background: red; }*/
 
-.navContainer a, .navContainer a:visited, .navContainer a:active {
+.navContainer a, .navContainer a:visited, .navContainer a:active, .navContainer i {
 	color: #ccc; }
-.navContainer i {
-	color: #ccc; }
-.toggle {
-	color: #ccc; }
-.menu {
+/*.navContainer i:hover, .toggle:hover {
+	color: #fff; }*/
+
+.navContainer .link:hover, .fa:hover {
+	color: #fff;	}
+.menuMain {
 	display: none; }
-.link {
-	color: #ccc;
-	text-decoration: none; }
-.social .link {
-		margin: 0 10px;	}
+.menu-mobile {
+	display: flex;
+	display: -webkit-box;
+  	display: -ms-flexbox;
+    display: -webkit-flex;
+	align-items: center;
+	background: blue;
+	opacity: 0.7;
+	font-size: 2em;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column; }
+.menu-mobile .link {
+	margin: auto;
+	color: #ccc; 
+	text-decoration: none; 
+	text-transform: uppercase;   }
+
+.toggle-x { 
+	cursor: pointer;
+	position: absolute;
+	/*top: 10px;
+	left: 10px;*/
+	z-index: 98; }
+.top {
+	position: absolute;
+	top:10px;
+	left: 10px;
+	z-index: 99; }
+.social {
+	display: none; } 
+.toggle-x { 
+	top:10px;
+	left: 10px; }
+	
 
 
-
-@media screen and (min-width: 768px) { 
-	.menu, .social {
-		display: flex; }
-	.menu .link {
-		margin: 0 10px;	}
-	.toggle {
+@media screen and (min-width: 968px) {
+	.toggle-x {
+		display: none; } 
+	.menuMain {
+		display: flex;
+		display: -webkit-box;
+  		display: -ms-flexbox;
+    	display: -webkit-flex;
+		align-items: center;
+		flex: 1; 
+		justify-content: space-around; }
+	.menuMain .link  {
+		font-size: 0.8em;
+		text-decoration: none; }
+	.social {
+		display: flex;
+		display: -webkit-box;
+	  	display: -ms-flexbox;
+	    display: -webkit-flex;
+		align-items: center;  }
+	.hide {
 		display: none; 	}
+	.social .link {
+		margin: 0 10px;	}
+	.top {
+		position: absolute;
+		top:10px;
+		left: 10px; }
+
 }
+
+
