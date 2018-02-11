@@ -21,6 +21,8 @@ toggleBtn[0].addEventListener("click",function() {
   menuMain[0].classList.toggle("menu-mobile");
   social[0].classList.toggle("hide");
   navContainer[0].classList.add("test");
+  navContainer[0].classList.toggle("navContainerHide");
+
   // navContainer.classList.remove("navContainer");
 	}
 )
