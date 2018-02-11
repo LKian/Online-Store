@@ -17,18 +17,10 @@ html {
 	justify-content: space-between; 
 	background: blue;
 	position: relative;
-	height: 35px;  }
-
-/*.navContainerMobile { 
-	align-items: center;
-	flex-direction: column;
-	height: 100vw;
-	background: red; }*/
+	height: 4rem;  }
 
 .navContainer a, .navContainer a:visited, .navContainer a:active, .navContainer i {
 	color: #ccc; }
-/*.navContainer i:hover, .toggle:hover {
-	color: #fff; }*/
 
 .navContainer .link:hover, .fa:hover {
 	color: #fff;	}
@@ -42,7 +34,7 @@ html {
 	align-items: center;
 	background: blue;
 	opacity: 0.7;
-	font-size: 2em;
+	font-size: 3rem;
 	width: 100vw;
 	height: 100vh;
 	flex-direction: column; }
@@ -55,20 +47,21 @@ html {
 .toggle-x { 
 	cursor: pointer;
 	position: absolute;
-	/*top: 10px;
-	left: 10px;*/
+	font-size: 3rem;
+	top: 0.3rem;
+	left: 0.9rem;
 	z-index: 98; }
 .top {
-	position: absolute;
-	top:10px;
-	left: 10px;
+	position: absolute;	
+	font-size: 3rem;
+	top: 0.3rem;
+	left: 0.9rem;
 	z-index: 99; }
 .social {
 	display: none; } 
-.toggle-x { 
-	top:10px;
-	left: 10px; }
-	
+.navContainerHide {
+	height: 0;
+}
 
 
 @media screen and (min-width: 968px) {
@@ -83,7 +76,7 @@ html {
 		flex: 1; 
 		justify-content: space-around; }
 	.menuMain .link  {
-		font-size: 0.8em;
+		font-size: 0.8rem;
 		text-decoration: none; }
 	.social {
 		display: flex;
@@ -94,11 +87,11 @@ html {
 	.hide {
 		display: none; 	}
 	.social .link {
-		margin: 0 10px;	}
+		margin: 0 0.5rem;	}
 	.top {
 		position: absolute;
-		top:10px;
-		left: 10px; }
+		top: 0.5rem;
+		left: 0.5rem; }
 
 }
 
